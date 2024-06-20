@@ -144,7 +144,7 @@ public class CadastroLivros extends javax.swing.JFrame {
         
         //Inserir no banco de dados
         LivroDAO livroDAO = new LivroDAO();
-        livroDAO.inserir(livro);
+        livroDAO.cadastrarLivro(livro);
         
         //Limpar os campos do formulário
         txtTitulo.setText("");

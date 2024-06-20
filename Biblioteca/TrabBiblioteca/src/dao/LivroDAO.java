@@ -26,7 +26,7 @@ public class LivroDAO {
     }
     
     
-    public void inserir(Livro livro){
+    public void cadastrarLivro(Livro livro){
         String sql = "INSERT INTO livros(titulo,autor,numeroexemplares,estado) VALUES (?,?,?,?)";
         try {
             PreparedStatement stmt = this.conn.prepareStatement(sql);
